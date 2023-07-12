@@ -1,4 +1,7 @@
 # Plan-Health
+
+## About this project
+
 ------------------------
 ## Run this project
 Clone this repo using cmd: git clone.
