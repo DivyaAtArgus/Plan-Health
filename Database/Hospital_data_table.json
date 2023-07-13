@@ -8,6 +8,7 @@
   "contact": "555-123-4567",
   "website": "www.hospitalA.com",
   "City": "Jaipur",
+  "state": "Rajasthan",
   "Rating": 5
 },
 {
@@ -20,6 +21,7 @@
   "contact": "555-234-5678",
   "website": "www.hospitalB.com",
   "City": "Ahemdabad",
+  "state": "Gujarat",
   "Rating": 4
 },
 {
@@ -32,6 +34,7 @@
   "contact": "555-345-6789",
   "website": "www.hospitalC.com",
   "City": "Dwarka",
+  "state": "Gujarat",
   "Rating": 3.5
 },
 {
@@ -44,6 +47,7 @@
   "contact": "555-456-7890",
   "website": "www.hospitalD.com",
   "City": "Jaipur",
+  "state": "Rajasthan",
   "Rating": 4
 },
 {
@@ -56,6 +60,7 @@
   "contact": "555-567-8901",
   "website": "www.hospitalE.com",
   "City": "Gandhinagar",
+  "state": "Gujarat",
   "Rating": 4
 },
 {
@@ -68,6 +73,7 @@
   "contact": "555-678-9012",
   "website": "www.hospitalF.com",
   "City": "Bhubaneswar",
+  "state": "Odisha",
   "Rating": 5
 },
 {
@@ -80,6 +86,7 @@
   "contact": "555-789-0123",
   "website": "www.hospitalG.com",
   "City": "Gandhinagar",
+  "state": "Gujarat",
   "Rating": 4.5
 },
 {
@@ -92,6 +99,7 @@
   "contact": "555-890-1234",
   "website": "www.hospitalH.com",
   "City": "Bhubaneswar",
+   "state": "Odisha",
   "Rating": 3.2
 },
 {
@@ -104,6 +112,7 @@
   "contact": "555-901-2345",
   "website": "www.hospitalI.com",
   "City": "Godhra",
+  "state": "Gujarat",
   "Rating": 4
 },
 {
@@ -116,5 +125,6 @@
   "contact": "555-012-3456",
   "website": "www.hospitalJ.com",
   "City": "Gandhinagar",
+  "state": "Gujarat",
   "Rating": 4.5
 }]
