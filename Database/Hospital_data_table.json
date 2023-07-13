@@ -1,0 +1,130 @@
+[{
+  "_id": {
+    "$oid": "64ad401baa2b1acf6846cbd9"
+  },
+  "id": 1,
+  "name": "Mahatma hospital",
+  "address": "123 Main Street",
+  "contact": "555-123-4567",
+  "website": "www.hospitalA.com",
+  "City": "Jaipur",
+  "state": "Rajasthan",
+  "Rating": 5
+},
+{
+  "_id": {
+    "$oid": "64ad401baa2b1acf6846cbda"
+  },
+  "id": 2,
+  "name": "Capital hospital",
+  "address": "456 Park Avenue",
+  "contact": "555-234-5678",
+  "website": "www.hospitalB.com",
+  "City": "Ahemdabad",
+  "state": "Gujarat",
+  "Rating": 4
+},
+{
+  "_id": {
+    "$oid": "64ad401baa2b1acf6846cbdb"
+  },
+  "id": 3,
+  "name": "Mahanaya hospital",
+  "address": "789 Elm Street",
+  "contact": "555-345-6789",
+  "website": "www.hospitalC.com",
+  "City": "Dwarka",
+  "state": "Gujarat",
+  "Rating": 3.5
+},
+{
+  "_id": {
+    "$oid": "64ad401baa2b1acf6846cbdc"
+  },
+  "id": 4,
+  "name": "Shree durga hospital",
+  "address": "321 Oak Lane",
+  "contact": "555-456-7890",
+  "website": "www.hospitalD.com",
+  "City": "Jaipur",
+  "state": "Rajasthan",
+  "Rating": 4
+},
+{
+  "_id": {
+    "$oid": "64ad401baa2b1acf6846cbdd"
+  },
+  "id": 5,
+  "name": "Heathify hospital",
+  "address": "654 Maple Road",
+  "contact": "555-567-8901",
+  "website": "www.hospitalE.com",
+  "City": "Gandhinagar",
+  "state": "Gujarat",
+  "Rating": 4
+},
+{
+  "_id": {
+    "$oid": "64ad401baa2b1acf6846cbde"
+  },
+  "id": 6,
+  "name": "Hitech hospital",
+  "address": "987 Cedar Avenue",
+  "contact": "555-678-9012",
+  "website": "www.hospitalF.com",
+  "City": "Bhubaneswar",
+  "state": "Odisha",
+  "Rating": 5
+},
+{
+  "_id": {
+    "$oid": "64ad401baa2b1acf6846cbdf"
+  },
+  "id": 7,
+  "name": "Aayush hospital",
+  "address": "210 Pine Street",
+  "contact": "555-789-0123",
+  "website": "www.hospitalG.com",
+  "City": "Gandhinagar",
+  "state": "Gujarat",
+  "Rating": 4.5
+},
+{
+  "_id": {
+    "$oid": "64ad401baa2b1acf6846cbe0"
+  },
+  "id": 8,
+  "name": "Amri hospital",
+  "address": "543 Birch Drive",
+  "contact": "555-890-1234",
+  "website": "www.hospitalH.com",
+  "City": "Bhubaneswar",
+   "state": "Odisha",
+  "Rating": 3.2
+},
+{
+  "_id": {
+    "$oid": "64ad401baa2b1acf6846cbe1"
+  },
+  "id": 9,
+  "name": " Radhe Shyam hospital",
+  "address": "876 Willow Court",
+  "contact": "555-901-2345",
+  "website": "www.hospitalI.com",
+  "City": "Godhra",
+  "state": "Gujarat",
+  "Rating": 4
+},
+{
+  "_id": {
+    "$oid": "64ad401baa2b1acf6846cbe2"
+  },
+  "id": 10,
+  "name": "Deepjyoti Care Hospital",
+  "address": "234 Cherry Lane",
+  "contact": "555-012-3456",
+  "website": "www.hospitalJ.com",
+  "City": "Gandhinagar",
+  "state": "Gujarat",
+  "Rating": 4.5
+}]

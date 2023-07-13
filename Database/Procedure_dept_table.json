@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "64ad3de8aa2b1acf6846cbc1"
+  },
+  "id": 1,
+  "department_id": 1,
+  "procedure_id": 1
+},
+{
+  "_id": {
+    "$oid": "64ad3de8aa2b1acf6846cbc2"
+  },
+  "id": 2,
+  "department_id": 2,
+  "procedure_id": 2
+},
+{
+  "_id": {
+    "$oid": "64ad3de8aa2b1acf6846cbc3"
+  },
+  "id": 3,
+  "department_id": 2,
+  "procedure_id": 3
+},
+{
+  "_id": {
+    "$oid": "64ad3de8aa2b1acf6846cbc4"
+  },
+  "id": 4,
+  "department_id": 3,
+  "procedure_id": 3
+},
+{
+  "_id": {
+    "$oid": "64ad3de8aa2b1acf6846cbc5"
+  },
+  "id": 5,
+  "department_id": 4,
+  "procedure_id": 4
+},
+{
+  "_id": {
+    "$oid": "64ad3de8aa2b1acf6846cbc6"
+  },
+  "id": 6,
+  "department_id": 5,
+  "procedure_id": 5
+},
+{
+  "_id": {
+    "$oid": "64ad3de8aa2b1acf6846cbc7"
+  },
+  "id": 7,
+  "department_id": 6,
+  "procedure_id": 6
+},
+{
+  "_id": {
+    "$oid": "64ad3de8aa2b1acf6846cbc8"
+  },
+  "id": 8,
+  "department_id": 7,
+  "procedure_id": 7
+},
+{
+  "_id": {
+    "$oid": "64ad3de8aa2b1acf6846cbc9"
+  },
+  "id": 9,
+  "department_id": 8,
+  "procedure_id": 8
+},
+{
+  "_id": {
+    "$oid": "64ad3de8aa2b1acf6846cbca"
+  },
+  "id": 10,
+  "department_id": 9,
+  "procedure_id": 9
+}]
