@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "64ad02f3aa2b1acf6846cb97"
+  },
+  "id": 1,
+  "name": "Cardiology"
+},
+{
+  "_id": {
+    "$oid": "64ad02f3aa2b1acf6846cb98"
+  },
+  "id": 2,
+  "name": "Orthopedics"
+},
+{
+  "_id": {
+    "$oid": "64ad02f3aa2b1acf6846cb99"
+  },
+  "id": 3,
+  "name": "Pediatrics"
+},
+{
+  "_id": {
+    "$oid": "64ad02f3aa2b1acf6846cb9a"
+  },
+  "id": 4,
+  "name": "Dermatology"
+},
+{
+  "_id": {
+    "$oid": "64ad02f3aa2b1acf6846cb9b"
+  },
+  "id": 5,
+  "name": "Ophthalmology"
+},
+{
+  "_id": {
+    "$oid": "64ad02f3aa2b1acf6846cb9c"
+  },
+  "id": 6,
+  "name": "Neurology"
+},
+{
+  "_id": {
+    "$oid": "64ad02f3aa2b1acf6846cb9d"
+  },
+  "id": 7,
+  "name": "Gastroenterology"
+},
+{
+  "_id": {
+    "$oid": "64ad02f3aa2b1acf6846cb9e"
+  },
+  "id": 8,
+  "name": "Urology"
+},
+{
+  "_id": {
+    "$oid": "64ad02f3aa2b1acf6846cb9f"
+  },
+  "id": 9,
+  "name": "Oncology"
+},
+{
+  "_id": {
+    "$oid": "64ad02f3aa2b1acf6846cba0"
+  },
+  "id": 10,
+  "name": "ENT"
+}]
