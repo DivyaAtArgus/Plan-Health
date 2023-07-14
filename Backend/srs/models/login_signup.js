@@ -8,7 +8,7 @@ const app = express();
 const port = 3000;
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/myapp', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://localhost:27017/Hospital_info', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Connected to MongoDB');
   })
@@ -36,6 +36,11 @@ app.post('/signup', async (req, res) => {
   try {
     const { name, email, phoneNumber, password } = req.body;
 
+    // Validate input
+    if (!name || !email || !phoneNumber || !password) {
+      return res.status(400).json({ message: 'All fields are required' });
+    }
+
     // Check if user already exists
     const existingUser = await User.findOne({ email });
 
@@ -59,6 +64,7 @@ app.post('/signup', async (req, res) => {
 
     res.status(201).json({ message: 'User created successfully' });
   } catch (error) {
+    console.log('Signup error:', error);
     res.status(500).json({ message: 'An error occurred' });
   }
 });
@@ -66,6 +72,11 @@ app.post('/signup', async (req, res) => {
 app.post('/login', async (req, res) => {
   try {
     const { email, password } = req.body;
+
+    // Validate input
+    if (!email || !password) {
+      return res.status(400).json({ message: 'Email and password are required' });
+    }
 
     // Check if user exists
     const user = await User.findOne({ email });
@@ -86,11 +97,22 @@ app.post('/login', async (req, res) => {
 
     res.status(200).json({ message: 'Login successful', token });
   } catch (error) {
+    console.log('Login error:', error);
     res.status(500).json({ message: 'An error occurred' });
   }
+});
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).json({ message: 'Something went wrong' });
 });
 
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+
+//Remember to replace 'mongodb://localhost:27017/myapp' with your actual MongoDB connection string. 
+//Also, ensure that you have a MongoDB database named myapp available.
