@@ -3,8 +3,8 @@
     "$oid": "64ad3e5baa2b1acf6846cbcc"
   },
   "id": 1,
-  "hospital_id": H1,
-  "procedure_id": P1,
+  "hospital_id": 1,
+  "procedure_id": 1,
   "price": 250
 },
 {
@@ -12,8 +12,8 @@
     "$oid": "64ad3e5baa2b1acf6846cbcd"
   },
   "id": 2,
-  "hospital_id": H1,
-  "procedure_id": P2,
+  "hospital_id": 1,
+  "procedure_id": 2,
   "price": 5000
 },
 {
@@ -21,8 +21,8 @@
     "$oid": "64ad3e5baa2b1acf6846cbce"
   },
   "id": 3,
-  "hospital_id": H1,
-  "procedure_id": P3,
+  "hospital_id": 1,
+  "procedure_id": 3,
   "price": 3000
 },
 {
@@ -30,8 +30,8 @@
     "$oid": "64ad3e5baa2b1acf6846cbcf"
   },
   "id": 4,
-  "hospital_id": H2,
-  "procedure_id": P2,
+  "hospital_id": 2,
+  "procedure_id": 2,
   "price": 4800
 },
 {
@@ -39,8 +39,8 @@
     "$oid": "64ad3e5baa2b1acf6846cbd0"
   },
   "id": 5,
-  "hospital_id": H2,
-  "procedure_id": P4,
+  "hospital_id": 2,
+  "procedure_id": 4,
   "price": 200
 },
 {
@@ -48,8 +48,8 @@
     "$oid": "64ad3e5baa2b1acf6846cbd1"
   },
   "id": 6,
-  "hospital_id": H3,
-  "procedure_id": P1,
+  "hospital_id": 3,
+  "procedure_id": 1,
   "price": 220
 },
 {
@@ -57,8 +57,8 @@
     "$oid": "64ad3e5baa2b1acf6846cbd2"
   },
   "id": 7,
-  "hospital_id": H3,
-  "procedure_id": P3,
+  "hospital_id": 3,
+  "procedure_id": 3,
   "price": 2800
 },
 {
@@ -66,8 +66,8 @@
     "$oid": "64ad3e5baa2b1acf6846cbd3"
   },
   "id": 8,
-  "hospital_id": H3,
-  "procedure_id": P5,
+  "hospital_id": 3,
+  "procedure_id": 5,
   "price": 1500
 },
 {
@@ -75,8 +75,8 @@
     "$oid": "64ad3e5baa2b1acf6846cbd4"
   },
   "id": 9,
-  "hospital_id": H4,
-  "procedure_id": P4,
+  "hospital_id": 4,
+  "procedure_id": 4,
   "price": 180
 },
 {
@@ -84,7 +84,7 @@
     "$oid": "64ad3e5baa2b1acf6846cbd5"
   },
   "id": 10,
-  "hospital_id": H4,
-  "procedure_id": P6,
+  "hospital_id": 4,
+  "procedure_id": 6,
   "price": 800
 }]
