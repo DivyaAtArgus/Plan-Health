@@ -2,7 +2,7 @@
   "_id": {
     "$oid": "64ad401baa2b1acf6846cbd9"
   },
-  "id": H1,
+  "id": 1,
   "name": "Mahatma hospital",
   "address": "123 Main Street",
   "contact": "555-123-4567",
@@ -15,7 +15,7 @@
   "_id": {
     "$oid": "64ad401baa2b1acf6846cbda"
   },
-  "id": H2,
+  "id": 2,
   "name": "Capital hospital",
   "address": "456 Park Avenue",
   "contact": "555-234-5678",
@@ -28,7 +28,7 @@
   "_id": {
     "$oid": "64ad401baa2b1acf6846cbdb"
   },
-  "id": H3,
+  "id": 3,
   "name": "Mahanaya hospital",
   "address": "789 Elm Street",
   "contact": "555-345-6789",
@@ -41,7 +41,7 @@
   "_id": {
     "$oid": "64ad401baa2b1acf6846cbdc"
   },
-  "id": H4,
+  "id": 4,
   "name": "Shree durga hospital",
   "address": "321 Oak Lane",
   "contact": "555-456-7890",
@@ -54,7 +54,7 @@
   "_id": {
     "$oid": "64ad401baa2b1acf6846cbdd"
   },
-  "id": H5,
+  "id": 5,
   "name": "Heathify hospital",
   "address": "654 Maple Road",
   "contact": "555-567-8901",
@@ -67,7 +67,7 @@
   "_id": {
     "$oid": "64ad401baa2b1acf6846cbde"
   },
-  "id": H6,
+  "id": 6,
   "name": "Hitech hospital",
   "address": "987 Cedar Avenue",
   "contact": "555-678-9012",
@@ -80,7 +80,7 @@
   "_id": {
     "$oid": "64ad401baa2b1acf6846cbdf"
   },
-  "id": H7,
+  "id": 7,
   "name": "Aayush hospital",
   "address": "210 Pine Street",
   "contact": "555-789-0123",
@@ -93,7 +93,7 @@
   "_id": {
     "$oid": "64ad401baa2b1acf6846cbe0"
   },
-  "id": H8,
+  "id": 8,
   "name": "Amri hospital",
   "address": "543 Birch Drive",
   "contact": "555-890-1234",
@@ -106,7 +106,7 @@
   "_id": {
     "$oid": "64ad401baa2b1acf6846cbe1"
   },
-  "id": H9,
+  "id": 9,
   "name": " Radhe Shyam hospital",
   "address": "876 Willow Court",
   "contact": "555-901-2345",
@@ -119,7 +119,7 @@
   "_id": {
     "$oid": "64ad401baa2b1acf6846cbe2"
   },
-  "id": H10,
+  "id": 10,
   "name": "Deepjyoti Care Hospital",
   "address": "234 Cherry Lane",
   "contact": "555-012-3456",
