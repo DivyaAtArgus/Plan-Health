@@ -7,7 +7,7 @@
   "address": "123 Main Street",
   "contact": "555-123-4567",
   "website": "www.hospitalA.com",
-  "City": "Jaipur",
+  "city": "Jaipur",
   "state": "Rajasthan",
   "Rating": 5
 },
@@ -20,7 +20,7 @@
   "address": "456 Park Avenue",
   "contact": "555-234-5678",
   "website": "www.hospitalB.com",
-  "City": "Ahemdabad",
+  "city": "Ahemdabad",
   "state": "Gujarat",
   "Rating": 4
 },
@@ -46,7 +46,7 @@
   "address": "321 Oak Lane",
   "contact": "555-456-7890",
   "website": "www.hospitalD.com",
-  "City": "Jaipur",
+  "city": "Jaipur",
   "state": "Rajasthan",
   "Rating": 4
 },
@@ -59,7 +59,7 @@
   "address": "654 Maple Road",
   "contact": "555-567-8901",
   "website": "www.hospitalE.com",
-  "City": "Gandhinagar",
+  "city": "Gandhinagar",
   "state": "Gujarat",
   "Rating": 4
 },
@@ -72,7 +72,7 @@
   "address": "987 Cedar Avenue",
   "contact": "555-678-9012",
   "website": "www.hospitalF.com",
-  "City": "Bhubaneswar",
+  "city": "Bhubaneswar",
   "state": "Odisha",
   "Rating": 5
 },
@@ -85,7 +85,7 @@
   "address": "210 Pine Street",
   "contact": "555-789-0123",
   "website": "www.hospitalG.com",
-  "City": "Gandhinagar",
+  "city": "Gandhinagar",
   "state": "Gujarat",
   "Rating": 4.5
 },
@@ -98,7 +98,7 @@
   "address": "543 Birch Drive",
   "contact": "555-890-1234",
   "website": "www.hospitalH.com",
-  "City": "Bhubaneswar",
+  "city": "Bhubaneswar",
    "state": "Odisha",
   "Rating": 3.2
 },
@@ -111,7 +111,7 @@
   "address": "876 Willow Court",
   "contact": "555-901-2345",
   "website": "www.hospitalI.com",
-  "City": "Godhra",
+  "city": "Godhra",
   "state": "Gujarat",
   "Rating": 4
 },
@@ -124,7 +124,7 @@
   "address": "234 Cherry Lane",
   "contact": "555-012-3456",
   "website": "www.hospitalJ.com",
-  "City": "Gandhinagar",
+  "city": "Gandhinagar",
   "state": "Gujarat",
   "Rating": 4.5
 }]
