@@ -1,1 +1,138 @@
-
+[{
+  "_id": {
+    "$oid": "64b619fe04d7c4c6850db80f"
+  },
+  "id": 1,
+  "name": "Mahatma hospital",
+  "address": "123 Main Street",
+  "contact": "555-123-4567",
+  "website": "www.hospitalA.com",
+  "City": "Jaipur",
+  "state": "Rajasthan",
+  "Rating": 5,
+  "description": "\"Our hospital provides state-of-the-art medical care, advanced treatments, and compassionate staff dedicated to your well-being.\""
+},
+{
+  "_id": {
+    "$oid": "64b619fe04d7c4c6850db810"
+  },
+  "id": 2,
+  "name": "Capital hospital",
+  "address": "456 Park Avenue",
+  "contact": "555-234-5678",
+  "website": "www.hospitalB.com",
+  "City": "Ahemdabad",
+  "state": "Gujarat",
+  "Rating": 4,
+  "description": "\"Experience exceptional healthcare at our facility, where cutting-edge technology meets personalized patient care.\""
+},
+{
+  "_id": {
+    "$oid": "64b619fe04d7c4c6850db811"
+  },
+  "id": 3,
+  "name": "Mahanaya hospital",
+  "address": "789 Elm Street",
+  "contact": "555-345-6789",
+  "website": "www.hospitalC.com",
+  "City": "Dwarka",
+  "state": "Gujarat",
+  "Rating": 3.5,
+  "description": "\"Discover a hospital that prioritizes patient comfort, delivering exceptional medical services with a warm and caring approach.\""
+},
+{
+  "_id": {
+    "$oid": "64b619fe04d7c4c6850db812"
+  },
+  "id": 4,
+  "name": "Shree durga hospital",
+  "address": "321 Oak Lane",
+  "contact": "555-456-7890",
+  "website": "www.hospitalD.com",
+  "City": "Jaipur",
+  "Rating": 4,
+  "description": "\"Receive top-notch healthcare from our highly skilled medical professionals, utilizing the latest advancements in medical science.\""
+},
+{
+  "_id": {
+    "$oid": "64b619fe04d7c4c6850db813"
+  },
+  "id": 5,
+  "name": "Heathify hospital",
+  "address": "654 Maple Road",
+  "contact": "555-567-8901",
+  "website": "www.hospitalE.com",
+  "City": "Gandhinagar",
+  "state": "Gujarat",
+  "Rating": 4,
+  "description": "\"At our hospital, we are committed to providing comprehensive healthcare services tailored to meet your unique needs.\""
+},
+{
+  "_id": {
+    "$oid": "64b619fe04d7c4c6850db814"
+  },
+  "id": 6,
+  "name": "Hitech hospital",
+  "address": "987 Cedar Avenue",
+  "contact": "555-678-9012",
+  "website": "www.hospitalF.com",
+  "City": "Bhubaneswar",
+  "Rating": 5,
+  "description": "\"Experience a hospital renowned for its expertise in specialized medical fields, ensuring the best possible outcomes for our patients.\""
+},
+{
+  "_id": {
+    "$oid": "64b619fe04d7c4c6850db815"
+  },
+  "id": 7,
+  "name": "Aayush hospital",
+  "address": "210 Pine Street",
+  "contact": "555-789-0123",
+  "website": "www.hospitalG.com",
+  "City": "Gandhinagar",
+  "state": "Gujarat",
+  "Rating": 4.5,
+  "description": "\"With a focus on innovation and excellence, our hospital offers a wide range of medical services delivered by a dedicated team of experts.\""
+},
+{
+  "_id": {
+    "$oid": "64b619fe04d7c4c6850db816"
+  },
+  "id": 8,
+  "name": "Amri hospital",
+  "address": "543 Birch Drive",
+  "contact": "555-890-1234",
+  "website": "www.hospitalH.com",
+  "City": "Bhubaneswar",
+  "state": "Odisha",
+  "Rating": 3.2,
+  "description": "\"Experience exceptional care and support at our hospital, where we prioritize your health and well-being above all else.\""
+},
+{
+  "_id": {
+    "$oid": "64b619fe04d7c4c6850db817"
+  },
+  "id": 9,
+  "name": " Radhe Shyam hospital",
+  "address": "876 Willow Court",
+  "contact": "555-901-2345",
+  "website": "www.hospitalI.com",
+  "City": "Godhra",
+  "state": "Rajasthan",
+  "Rating": 4,
+  "description": "\"Discover a hospital known for its commitment to research, education, and delivering cutting-edge treatments to improve patient outcomes.\""
+},
+{
+  "_id": {
+    "$oid": "64b619fe04d7c4c6850db818"
+  },
+  "id": 10,
+  "name": "Deepjyoti Care Hospital",
+  "address": "234 Cherry Lane",
+  "contact": "555-012-3456",
+  "website": "www.hospitalJ.com",
+  "City": "Gandhinagar",
+  "state": "Gujarat",
+  "Rating": 4.5,
+  "description": "\"Choose our hospital for world-class healthcare, where a multidisciplinary team of experts collaborates to provide the highest standard of medical care."
+}]
