@@ -14,14 +14,6 @@ app.use(bodyParser.json());
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-//database connection
-mongoose.connect(process.env.DB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-})
-.then(() => console.log('Connected to the database!'))
-.catch((err) => console.log(err));
-
 //routes prefix
 app.use("/",require("./routes/routes"));
 
