@@ -1,6 +1,6 @@
 const Hospital = require('../models/hospital');
 const Department = require('../models/department');
-const hospital = require('../models/hospital');
+
 
 
 exports.addHospital = async (req, res) => {
