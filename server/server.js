@@ -1,29 +1,21 @@
-// imports
-require("dotenv").config();
-const express = require("express");
-const mongoose = require("mongoose");
-const cors = require("cors");
-const bodyParser = require("body-parser");
+var express = require('express');
+const pool = require('./db/db');
+var router = require( './route/user');
+  
+// Initialize express app
+var app = express();
 
-const app = express();
-const port = process.env.PORT || 5000;
-
-//middlewares
-app.use(cors());
-app.use(bodyParser.json());
 app.use(express.json());
-app.use(express.urlencoded({extended: true}));
 
-//database connection
-mongoose.connect(process.env.DB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-})
-.then(() => console.log('Connected to the database!'))
-.catch((err) => console.log(err));
+app.use("/", router)
 
-//routes prefix
-app.use("/",require("./routes/routes"));
+pool.connect((err, client, done) => {
+  if (err) {
+    console.error('Error connecting to the database:', err);
+    return;
+  }
+  console.log('Connected to the PostgreSQL database.');
 
-//start server
-app.listen(port, () => console.log(`Server running at http://localhost:${port}`));
+  // Release the client from the pool
+  done();
+});
