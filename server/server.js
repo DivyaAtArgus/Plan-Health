@@ -19,7 +19,7 @@ pool.connect((err, client, done) => {
   // Release the client from the pool
   done();
 });
-/ Creating server
+//Creating server
 const port = 3000;
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
