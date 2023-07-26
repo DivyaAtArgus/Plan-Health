@@ -80,7 +80,7 @@
                 class="mx-auto"
                 max-width="60%"
             >
-                <v-toolbar color="cyan-lighten-1">
+                <v-toolbar color="black">
                 <v-btn variant="text" ><i class="fas fa-tooth"></i></v-btn>
 
                 <v-toolbar-title>Dental </v-toolbar-title>
