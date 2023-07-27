@@ -98,7 +98,7 @@ class Hospital {
       }
     }
 
-    async getProcedureByFilter(department, city, minPrice, maxPrice, rating) {
+    async getProcedureByFilter(hospname,department, city, minPrice, maxPrice, rating) {
       try {
         const query = `
         select distinct
@@ -126,7 +126,7 @@ class Hospital {
               AND h.rating >= $5;
           `;
     
-          const values = [department, city, minPrice, maxPrice, rating];
+          const values = [hospname,department, city, minPrice, maxPrice, rating];
     
           const { rows } = await pool.query(query, values);
     
