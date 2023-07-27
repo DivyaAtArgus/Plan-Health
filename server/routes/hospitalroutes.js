@@ -12,6 +12,7 @@ router.get('/', hospitalController.getAllHospitals);
 
 // GET a specific hospital by ID
 router.get('/filter', hospitalController.getHospitalByFilter);
+router.get('/filter1', hospitalController.getProcedureByFilter);
 router.get('/:id', hospitalController.getHospitalById);
 
 module.exports = router;
