@@ -119,11 +119,12 @@ class Hospital {
       join 
         procedure pro on pp.proc_id = pro.proc_id
             WHERE
-              d.name = $1
-              AND h.city = $2
-              AND pp.price >= $3
-              AND pp.price <= $4
-              AND h.rating >= $5;
+              h.name = $1
+              AND d.name = $2
+              AND h.city = $3
+              AND pp.price >= $4
+              AND pp.price <= $5
+              AND h.rating >= $6;
           `;
     
           const values = [hospname,department, city, minPrice, maxPrice, rating];
