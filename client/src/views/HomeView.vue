@@ -6,9 +6,9 @@
           <v-row>
             <v-col cols="5">
               <div style="position: relative" class="mt-16">
-                <h1 class="text-grey">Hello,</h1>
-                <h1 class="text-white">This is Plan Health</h1>
-                <span class="text-grey">Your well wisher</span><br />
+                 <h1 class="text-yellow" style="font-family: 'Times New Roman', Times, serif;">We Welcome You To</h1>
+                 <h1 class="text-white" style="font-family:'Times New Roman', Times, serif;">Plan Health</h1>
+                 <span class="text-" style="font-family: 'Times New Roman', Times, serif;" >Your well wisher</span><br />
   
                 <v-btn tile dark class="text-yellow mt-8" variant="outlined">
                   Contact us
@@ -57,14 +57,14 @@
                     label=""
                   ></v-slider>
                 </div>
-                <h4 class="mt-n4">We are Plan Health</h4>
-                <p class="text-grey">
-                  Our dedicated team is committed to helping you lead a healthier and happier life.
+                <h4 class="mt-n4 text-blue" style="font-family: 'Times New Roman', Times, serif;">We are Plan Health</h4>
+                <p class="text-black" style="font-family: 'Times New Roman', Times, serif;">
+                Our dedicated team is committed to helping you lead a healthier and happier life.
                 </p>
                 <br />
-                <h4 class="">Our Mission</h4>
-                <p class="text-grey">
-                  Our mission is to empower individuals to take control of their health by providing the knowledge, tools, and support needed to make informed decisions. We believe that a proactive approach to health is the key to preventing illness and achieving long-term well-being.
+                <h4 class="text mt-n4 text-blue" style="font-family: 'Times New Roman', Times, serif;">Our Mission</h4>
+                <p class="text-black" style="font-family: 'Times New Roman', Times, serif;">
+                Our mission is to empower individuals to take control of their health by providing the knowledge, tools, and support needed to make informed decisions. We believe that a proactive approach to health is the key to preventing illness and achieving long-term well-being.
                 </p>
                 <v-btn @click="showMore = !showMore" tile dark color="yellow" class="mt-4" target="_blank" to="">
                   More ...
