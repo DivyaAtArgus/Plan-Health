@@ -53,7 +53,6 @@ exports.getHospitalById = async (req, res) => {
 
 exports.getHospitalByFilter = async (req, res) => {
   try {
-    console.log("fffffffff")
     const { department, city, minPrice, maxPrice, rating } = req.query;
     const parsedMinPrice = parseInt(minPrice);
     const parsedMaxPrice = parseInt(maxPrice);
@@ -79,6 +78,35 @@ exports.getHospitalByFilter = async (req, res) => {
     console.error('Error fetching hospitals:', error);
     res.status(500).json({ error: 'Internal Server Error' });
   }
+}
+  exports.getProcedureByFilter = async (req, res) => {
+    try {
+      const { department, city, minPrice, maxPrice, rating } = req.query;
+      const parsedMinPrice = parseInt(minPrice);
+      const parsedMaxPrice = parseInt(maxPrice);
+      const parsedRating = parseFloat(rating);
+  
+      // Call the model function to fetch hospitals based on filters
+      const hospitals = await Hospital.getProcedureByFilter(
+        department,
+        city,
+        parsedMinPrice,
+        parsedMaxPrice,
+        parsedRating
+      );
+  
+      // If no hospitals match the filters, send a message
+      if (!hospitals || hospitals.length === 0) {
+        return res.status(404).json({ message: 'No hospitals found with the specified filters.' });
+      }
+  
+      // Send the filtered hospitals as JSON response
+      res.json(hospitals);
+    } catch (error) {
+      console.error('Error fetching hospitals:', error);
+      res.status(500).json({ error: 'Internal Server Error' });
+    }
 };
+
 
 
