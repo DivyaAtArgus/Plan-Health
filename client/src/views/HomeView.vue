@@ -49,7 +49,7 @@
                 </div>
               </v-col>
               <v-col cols="12" sm="6">
-                <h3 class="mt-16">About Us</h3>
+                <h3 class="text mt-n4 text-blue" aria-setsize="32" style="font-family: 'Times New Roman', Times, serif;">About Us</h3>
                 <div style="width: 120px">
                   <v-slider
                     v-model="slider2"
@@ -70,8 +70,8 @@
                   More ...
                 </v-btn>
                 <div v-if="showMore">
-                  <h4 class="">What We Offer</h4>
-                  <v-list class="text-grey">
+                  <h4 class="text-blue" style="font-family: 'Times New Roman', Times, serif;">What We Offer</h4>
+                  <v-list class="text-black" style="font-family: 'Times New Roman', Times, serif;">
                     <v-list-item v-for="(offer,index) in offers" :key="offer.id">
                       {{ index + 1 }}.{{ offer }}
                     </v-list-item>
@@ -82,7 +82,7 @@
           </div>
         </v-col>
         <div class="text-center mt-4">
-          <h2>What we Do</h2>
+          <h1 class="text-blue" style="font-family: 'Times New Roman', Times, serif;">May i Help You?</h1>
           <div style="width: 120px; margin: 0 auto">
             <v-slider
               v-model="slider2"
