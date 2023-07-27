@@ -63,9 +63,7 @@ class Hospital {
       h.name AS hospital_name,
       d.name AS department_name,
       h.city ,
-      h.rating,
-      pp.price,
-      pro.name
+      h.rating
     FROM
       hospital h
     JOIN
