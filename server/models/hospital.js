@@ -63,6 +63,8 @@ class Hospital {
       h.name AS hospital_name,
       d.name AS department_name,
       h.city ,
+      h.description,
+      h.state,
       h.rating
     FROM
       hospital h
@@ -86,17 +88,59 @@ class Hospital {
   
         const { rows } = await pool.query(query, values);
   
-        if (rows.length === 0) {
-          return null;
-        }
+        // if (rows.length === 0) {
+        //   return null;
+        // }
   
         return rows;
       } catch (error) {
         throw error;
       }
     }
-  };
 
+    async getProcedureByFilter(department, city, minPrice, maxPrice, rating) {
+      try {
+        const query = `
+        select distinct
+        h.name AS hospital_name,
+        d.name AS department_name,
+        h.contact,
+        h.website,
+        pro.name,
+        pp.price
+      FROM
+        hospital h
+      JOIN
+        hospital_department hd ON h.id = hd.hosp_id
+      JOIN
+        department d ON hd.dept_id = d.dept_id
+      JOIN
+        procedure_price pp ON h.id = pp.hosp_id
+      join 
+        procedure pro on pp.proc_id = pro.proc_id
+            WHERE
+              d.name = $1
+              AND h.city = $2
+              AND pp.price >= $3
+              AND pp.price <= $4
+              AND h.rating >= $5;
+          `;
+    
+          const values = [department, city, minPrice, maxPrice, rating];
+    
+          const { rows } = await pool.query(query, values);
+    
+          // if (rows.length === 0) {
+          //   return null;
+          // }
+    
+          return rows;
+        } catch (error) {
+          throw error;
+        }
+      }
+  }
 
 
 module.exports = new Hospital();
+
