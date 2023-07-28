@@ -133,7 +133,7 @@
                   <template v-slot:activator="{  props }">
                     <v-text-field
                   label="Enter a location"
-                  v-model="searchQuery" 
+                  v-model="Query" 
                   @input="handleInput"
                   @keyup.enter="selectOption"
                   :rules="rules"
@@ -215,7 +215,7 @@
                 </v-menu>
               </div>
               <v-col cols="auto">
-                <v-btn block rounded="sm" elevation="8" color="blue" size="x-large" class="mr-2">Search</v-btn>
+                <v-btn block rounded="sm" elevation="8" color="blue" size="large" class="mr-2">Search</v-btn>
               </v-col>
             </v-row>
         </v-container>
@@ -295,7 +295,7 @@
 
           <v-card-actions>
             <v-btn
-              color="deep-purple-lighten-2"
+              color="blue"
               variant="text"
               @click="reserve"
               to="/details"
@@ -555,7 +555,7 @@ methods: {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 80%;
   width: 50%;
   background: black;
   transform: skew(0deg, 6deg);
@@ -565,7 +565,7 @@ methods: {
   position: absolute;
   top: 0;
   right: 0;
-  height: 100%;
+  height: 80%;
   width: 50%;
   background: black;
   transform: skew(0deg, -6deg);
