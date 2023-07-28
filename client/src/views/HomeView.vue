@@ -51,11 +51,7 @@
               <v-col cols="12" sm="6">
                 <h3 class="text mt-n4 text-blue" aria-setsize="32" style="font-family: 'Times New Roman', Times, serif;">About Us</h3>
                 <div style="width: 120px">
-                  <v-slider
-                    v-model="slider2"
-                    color="yellow"
-                    label=""
-                  ></v-slider>
+                  &nbsp; 
                 </div>
                 <h4 class="mt-n4 text-blue" style="font-family: 'Times New Roman', Times, serif;">We are Plan Health</h4>
                 <p class="text-black" style="font-family: 'Times New Roman', Times, serif;">
@@ -84,11 +80,7 @@
         <div class="text-center mt-4">
           <h1 class="text-blue" style="font-family: 'Times New Roman', Times, serif;">May i Help You?</h1>
           <div style="width: 120px; margin: 0 auto">
-            <v-slider
-              v-model="slider2"
-              color="yellow"
-              label=""
-            ></v-slider>
+            &nbsp; 
           </div>
         </div>
 
