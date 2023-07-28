@@ -1,14 +1,14 @@
 <template>
-    <div>
+    <div class="div-container">
         <NavBarDetail />
         <v-container fluid>
         <div class="head">
           <v-row>
             <v-col cols="5">
               <div style="position: relative" class="mt-16">
-                <h1 class="text-white" size="x-large">Mahatma Hospital</h1>
-                <h1 class="text-white">Welcomes You! </h1>
-                <span class="text-grey">Your well wisher</span><br/>
+                <h1 class="text-yellow" size="x-large" style="font-family: 'Times New Roman', Times, serif;">Mahatma Hospital</h1>
+                <h1 class="text-white" style="font-family: 'Times New Roman', Times, serif;">Welcomes You! </h1>
+                <span class="text-yellow" style="font-family: 'Times New Roman', Times, serif;">Your well wisher</span><br/>
                 <v-icon  class="mt-16" size="xxx-large"> fas fa-hand-holding-medical</v-icon><br />
               </div>
             </v-col>
@@ -46,20 +46,16 @@
                 </div>
               </v-col>
               <v-col cols="12" sm="6">
-                <h3 class="mt-16" >Mahatma Hospital </h3>
+                <h3 class="text-blue" style="font-family: 'Times New Roman', Times, serif;" >Mahatma Hospital </h3>
                 <div style="width: 120px">
-                  <v-slider
-                    v-model="slider2"
-                    color="yellow"
-                    label=""
-                  ></v-slider>
+                  &nbsp; 
                 </div>
-                <h4 class="mt-n4">Hospital Description</h4>
-                <p class="text-grey">
+                <h3 class="text-blue" style="font-family: 'Times New Roman', Times, serif;">Hospital Description</h3>
+                <p class="text-black" style="font-family: 'Times New Roman', Times, serif;">
                   description
                 </p>
                 <br />
-                <p class="text-grey">
+                <p class="text-black" style="font-family: 'Times New Roman', Times, serif;">
                   contact, website...
                 </p>
               </v-col>
@@ -67,13 +63,9 @@
           </div>
         </v-col>
         <div class="text-center mt-4">
-          <h2>Treatments</h2>
+          <h2 style="font-family: 'Times New Roman', Times, serif;">Treatments Available</h2>
           <div style="width: 120px; margin: 0 auto">
-            <v-slider
-              v-model="slider2"
-              color="yellow"
-              label=""
-            ></v-slider>
+            &nbsp; 
           </div>
         </div>
         <v-card
@@ -83,7 +75,7 @@
                 <v-toolbar color="black">
                 <v-btn variant="text" ><i class="fas fa-tooth"></i></v-btn>
 
-                <v-toolbar-title>Dental </v-toolbar-title>
+                <v-toolbar-title style="font-family: 'Times New Roman', Times, serif;">Dental </v-toolbar-title>
                 </v-toolbar>
 
                 <v-list
@@ -135,11 +127,10 @@ export default defineComponent({
     }),
 })
 </script>
-
-
 <style scoped>
+
   .v-container {
-    padding: 16px 0 16px 0;
+    padding: 16px 0;
   }
   
   .head {
@@ -147,10 +138,10 @@ export default defineComponent({
     text-align: center;
     padding: 12px;
     margin-bottom: 6px;
-    height: 360px;
+    height: 400px;
     width: 100%;
-    margin-top: 0px;
-    color: rgb(236, 227, 227);
+    /* margin-top: 0px; */
+    color: white;
   }
   .head:before {
     content: "";
@@ -173,7 +164,9 @@ export default defineComponent({
     transform: skew(0deg, -6deg);
   }
   .egg {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 100px;
     margin-top: 50px;
     width: 356px;
@@ -181,6 +174,9 @@ export default defineComponent({
     background-color: #fbdf7e;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   }
+  .egg .center-image {
+  max-height: 180px;
+}
   .first {
     width: 100%;
     height: 280px;
@@ -202,7 +198,7 @@ export default defineComponent({
     height: 380px;
     text-align: center;
     padding: 0 200px;
-    background-color: #f5f5f5;
+    background-color: #fdf5f5;
   }
   .hire {
     width: 100%;
