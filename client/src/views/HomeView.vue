@@ -304,9 +304,6 @@
         </section>
       </v-container>
         <v-col cols="12" sm="12">
-          <div class="d-flex justify-center mb-6">
-            <v-btn color="#FBDF7E" class="mt-4">Load More</v-btn>
-          </div>
         </v-col>
         <v-col cols="12" sm="12" class="px-16" id="contact">
           <v-row>
