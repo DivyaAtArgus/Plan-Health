@@ -172,7 +172,7 @@ export default defineComponent({
     margin-top: 50px;
     width: 356px;
     height: 300px;
-    background-color: #fbdf7e;
+    background-color: #f2d648;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   }
   .egg .center-image {
