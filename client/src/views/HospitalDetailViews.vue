@@ -46,16 +46,17 @@
                 </div>
               </v-col>
               <v-col cols="12" sm="6">
-                <h3 class="text-blue" style="font-family: 'Times New Roman', Times, serif;" >Mahatma Hospital </h3>
+                <h2 class="text-blue" style="font-family: 'Times New Roman', Times, serif;" >Mahatma Hospital </h2>
                 <div style="width: 120px">
                   &nbsp; 
                 </div>
-                <h3 class="text-blue" style="font-family: 'Times New Roman', Times, serif;">Hospital Description</h3>
-                <p class="text-black" style="font-family: 'Times New Roman', Times, serif;">
+                <h2 class="text-blue" style="font-family: 'Times New Roman', Times, serif;">Hospital Description</h2>
+                <p class="text-blue" style="font-family: 'Times New Roman', Times, serif;
+                font-size: 18px;">
                   description
                 </p>
                 <br />
-                <p class="text-black" style="font-family: 'Times New Roman', Times, serif;">
+                <p class="text-blue" style="font-family: 'Times New Roman', Times, serif;font-size: 18px;">
                   contact, website...
                 </p>
               </v-col>
