@@ -81,13 +81,14 @@ exports.getHospitalByFilter = async (req, res) => {
 }
   exports.getProcedureByFilter = async (req, res) => {
     try {
-      const { hospname,department, city, minPrice, maxPrice, rating } = req.query;
+      const { hospid,hospname,department, city, minPrice, maxPrice, rating } = req.query;
       const parsedMinPrice = parseInt(minPrice);
       const parsedMaxPrice = parseInt(maxPrice);
       const parsedRating = parseFloat(rating);
   
       // Call the model function to fetch hospitals based on filters
       const hospitals = await Hospital.getProcedureByFilter(
+        hospid,
         hospname,
         department,
         city,
