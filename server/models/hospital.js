@@ -98,10 +98,11 @@ class Hospital {
       }
     }
 
-    async getProcedureByFilter(hospname,department, city, minPrice, maxPrice, rating) {
+    async getProcedureByFilter(hospid,hospname,department, city, minPrice, maxPrice, rating) {
       try {
         const query = `
         select distinct
+        h.id AS hospital_id,
         h.name AS hospital_name,
         d.name AS department_name,
         h.contact,
@@ -119,15 +120,16 @@ class Hospital {
       join 
         procedure pro on pp.proc_id = pro.proc_id
             WHERE
-              h.name = $1
-              AND d.name = $2
-              AND h.city = $3
-              AND pp.price >= $4
-              AND pp.price <= $5
-              AND h.rating >= $6;
+              h.id = $1
+              AND h.name = $2
+              AND d.name = $3
+              AND h.city = $4
+              AND pp.price >= $5
+              AND pp.price <= $6
+              AND h.rating >= $7;
           `;
     
-          const values = [hospname,department, city, minPrice, maxPrice, rating];
+          const values = [hospid,hospname,department, city, minPrice, maxPrice, rating];
     
           const { rows } = await pool.query(query, values);
     
