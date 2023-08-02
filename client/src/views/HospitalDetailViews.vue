@@ -9,7 +9,7 @@
                 <h1 class="text-yellow" size="x-large" style="font-family: 'Times New Roman', Times, serif;" v-bind="hospitalDetails" >{{hospitalDetails.hospital_name}}</h1>
                 <h1 class="text-white" style="font-family: 'Times New Roman', Times, serif;">Welcomes You! </h1>
                 <span class="text-yellow" style="font-family: 'Times New Roman', Times, serif;">Your well wisher</span><br/>
-                <v-icon  class="mt-16" size="xxx-large"> fas fa-hand-holding-medical</v-icon><br />
+                <v-icon  class="mt-16" size="xxx-large"><i class="fas fa-hand-holding-medical"></i> </v-icon><br />
               </div>
             </v-col>
             <v-col cols="2">
@@ -75,39 +75,26 @@
         </div>
         <v-card
                 class="mx-auto"
-                max-width="60%"
+                max-width="50%"
+                color="#FFFDE7"
+                style="font-family:'Times New Roman', Times, serif"
             >
                 <v-toolbar color="black">
-                <v-btn variant="text" ><i class="fas fa-tooth"></i></v-btn>
+                <!-- <v-btn variant="text" ><i class="fas fa-tooth"></i></v-btn> -->
 
                 <v-toolbar-title color="white" v-bind="hospitalDetails">{{ hospitalDetails.department_name }}</v-toolbar-title>
                 </v-toolbar>
                 <div v-for="(cardData, index) in procedureList" :key="index" item-props
-                    lines="three">
+                    lines="three"
+                  >
                   <div>{{procedureList[index].title}}</div>
                   <v-spacer></v-spacer>
-                <v-card-actions>
-                        <v-btn variant="outlined" color="black" right>
-                          {{procedureList[index].price}}
-                        </v-btn>
-                    </v-card-actions>
-                  <!-- <div>{{procedureList[index].price}}</div> -->
-                    <!-- <v-list
-                    :items="procedureList"
-                    item-props
-                    lines="three"
-                    > -->
-                    <!-- <template v-slot:title=""> -->
-                        <!-- <div>{{procedureList[index].title}}</div>
-                        <div>{{procedureList[index].price}}</div> -->
-                    <!-- <v-card-actions>
-                        <v-spacer></v-spacer>
-                        <v-btn variant="outlined" color="black" right>
-                          {{procedureList.price}}
-                        </v-btn>
-                    </v-card-actions>
-                    </template> -->
-                    <!-- </v-list> -->
+                  <v-card-actions class="d-flex align-center justify-end">
+                          <v-btn class="disabled-button" variant="outlined" color="black" >
+                            {{procedureList[index].price}}
+                          </v-btn>
+                  </v-card-actions>
+                  <v-divider></v-divider> <!-- Horizontal line -->
                 </div>
             </v-card>
         </v-container>
@@ -121,11 +108,12 @@ import FooterView from "../components/FooterView.vue";
 import axios from 'axios';
 
 export default defineComponent({
-    name: "HospitalDetailView",
-    components: {
-      NavBarDetail,
-      FooterView
+  name: "HospitalDetailView",
+  components: {
+    NavBarDetail,
+    FooterView
   },
+  props: ["id", "hospital_name","department_name","city", "rating"],
   data: () => ({
     proCard:null,
     hospitalDetails:{},
@@ -143,12 +131,13 @@ export default defineComponent({
   computed: {
   queryParams() {
      return {
-      hospname: 'Mahatma hospital',
-      department: 'Gastroenterology',
-      city: 'Jaipur',
+      hospid: this.id,
+      hospname: this.hospital_name,
+      department: this.department_name,
+      city: this.city,
       minPrice:0,
       maxPrice: 5000,
-      rating: 1,
+      rating: this.rating,
     };
    },
   },
@@ -160,11 +149,13 @@ export default defineComponent({
   async showProcedures() {
   try {
     console.log("listing procedures...");
+    console.log("this.cardData.id", this.id);
     console.log(this.apiURL, this.queryParams);
     const response = await axios.get(this.apiURL, { params: this.queryParams });
     this.procedureData = response?.data;
     console.log(this.procedureData);
     console.log(this.procedureData.name, this.procedureData[0] );
+    
     this.hospitalDetails=this.procedureData[0]
     for (const card in this.procedureData) {
       this.proCard = {title:this.procedureData[card].name,
@@ -260,6 +251,11 @@ export default defineComponent({
     padding: 0 200px;
     background-color: #f5f5f5;
   }
+
+  .disabled-button{
+    pointer-events: none;
+  }
+  
   .hire {
     width: 100%;
     height: 200px;
@@ -273,6 +269,6 @@ export default defineComponent({
     right: 0;
     height: 80%;
     width: 100%;
-    background: rgb(243, 234, 234);
+    background: rgb(243, 243, 241);
   }
   </style>
